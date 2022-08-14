@@ -1,13 +1,34 @@
-/* Front end style by anupammondal.in */ 
+/* Front end style by anupammondal.in */
 #new_card_dtls {
     width: 180px;
 }
+
 #card-exp-dt {
     width: 80px;
 }
+
 #card-cvv {
     width: 60px;
 }
+
 div.card {
     max-width: 380px;
+}
+
+#scroll-wrapper {
+    overflow: hidden;
+    max-width: 250px;
+    height: 30px;
+}
+
+#scroll-inputs {
+    width: 360px;
+}
+
+.col-auto {
+    display: inline-block;
+}
+
+.col-auto input {
+    display: inline-block;
 }
