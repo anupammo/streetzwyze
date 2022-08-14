@@ -1,4 +1,10 @@
 /* Front end style by anupammondal.in */ 
+#new_card_dtls {
+    width: 180px;
+}
 #card-exp-dt {
     width: 80px;
+}
+#card-cvv {
+    width: 60px;
 }
