@@ -1,4 +1,7 @@
 /* Front end style by anupammondal.in */
+a {
+    text-decoration: none !important;
+}
 #new_card_dtls {
     width: 180px;
 }

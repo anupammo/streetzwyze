@@ -36,78 +36,61 @@
                 <div class="col-lg-6 col-md-8 col-12 my-5">
                     <div class="card mx-auto d-block border-0 my-5">
                         <div class="card-body p-3">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-light border-bottom-0">
-                                    <div class="d-flex">
-                                        <div class="">
-                                            <svg class="bd-placeholder-img rounded" width="100" height="100"
-                                                xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200"
-                                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                                <title>A generic square placeholder image with a white border around it,
-                                                    making it resemble a photograph taken with an old instant camera
-                                                </title>
-                                                <rect width="100%" height="100%" fill="#868e96"></rect><text x="20%"
-                                                    y="53%" fill="#dee2e6" dy=".3em">100x100</text>
-                                            </svg>
-                                        </div>
-                                        <div class="flex-fill ml-3">
-                                            <p class="text-right my-3">Monster Studios</p>
-                                            <p class="text-right my-3">
-                                                <span>₦</span>
-                                                <!-- <span>NGN</span> -->
-                                                <span>30,000</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item border-bottom-0 my-4">
-                                    <div class="col-auto text-secondary h2 mb-0 px-2">
-                                        <i class="bi bi-credit-card-2-front-fill"></i>
-                                    </div>
-                                    <div class="col-auto px-0" id="scroll-wrapper">
-                                        <div id="scroll-inputs">
-                                            <input class="form-control shadow-none border-0" type="text"
-                                                placeholder="1234 1234 1234 1234" id="new_card_dtls">
-                                            <input class="form-control shadow-none border-0" type="text"
-                                                placeholder="MM/YY" id="card-exp-dt">
-                                            <input class="form-control shadow-none border-0" type="text"
-                                                placeholder="CVV" id="card-cvv">
-                                        </div>
-                                    </div>
-
-                                    <!-- <p>
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample"
-                                            role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            toggle
-                                        </a>
-                                    </p>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="card card-body mt-4">
-                                            <div class="form-row">
-                                                <div class="form-group">
-                                                    <input type="text" name="" placeholder="Full Name">
-                                                </div>
+                            <form action="">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light border-bottom-0">
+                                        <div class="d-flex">
+                                            <div class="">
+                                                <svg class="bd-placeholder-img rounded" width="100" height="100"
+                                                    xmlns="http://www.w3.org/2000/svg" role="img"
+                                                    aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200"
+                                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                                    <title>A generic square placeholder image with a white border around
+                                                        it,
+                                                        making it resemble a photograph taken with an old instant camera
+                                                    </title>
+                                                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="20%"
+                                                        y="53%" fill="#dee2e6" dy=".3em">100x100</text>
+                                                </svg>
                                             </div>
-                                            <div class="form-row">
-                                                <div class="form-group">
-                                                    <input type="text" name="" placeholder="Full Name">
-                                                </div>
+                                            <div class="flex-fill ml-3">
+                                                <p class="text-right my-3">Monster Studios</p>
+                                                <p class="text-right my-3">
+                                                    <span>₦</span>
+                                                    <!-- <span>NGN</span> -->
+                                                    <span>30,000</span>
+                                                </p>
                                             </div>
                                         </div>
-                                    </div> -->
-
-                                </li>
-                                <!-- <li class="list-group-item border-bottom-0 px-0">
-                                    <hr class="mx-2">
-                                </li> -->
-                                <li class="list-group-item bg-light">
-                                    <div class="d-grid gap-2">
-                                        <a class="btn btn-danger btn-block shadow-none my-4"
-                                            href="success_page.html">PAY</a>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li class="list-group-item border-bottom-0 my-4">
+                                        <div class="col-auto text-secondary h2 mb-0 px-2">
+                                            <i class="bi bi-credit-card-2-front-fill"></i>
+                                        </div>
+                                        <div class="col-auto px-0" id="scroll-wrapper">
+                                            <div id="scroll-inputs">
+                                                <input class="form-control shadow-none border-0" type="text"
+                                                    pattern="[0-9]{16}" title="Sixteen digit card numner" required
+                                                    placeholder="1234 1234 1234 1234" id="new_card_dtls">
+                                                <input class="form-control shadow-none border-0" type="text"
+                                                    pattern="[0-9]{4}" required title="Four digit exp date"
+                                                    placeholder="MM/YY" id="card-exp-dt">
+                                                <input class="form-control shadow-none border-0" type="text"
+                                                    pattern="[0-9]{3}" required title="Three digit CVV"
+                                                    placeholder="CVV" id="card-cvv">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item bg-light">
+                                        <div class="d-grid gap-2">
+                                            <a class="btn btn-danger btn-block shadow-none my-4"
+                                                href="success_page.html">PAY</a>
+                                            <!-- <input class="btn btn-danger btn-block shadow-none my-4" type="submit"
+                                                value="PAY"> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
                         </div>
                     </div>
                 </div>
