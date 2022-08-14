@@ -8,3 +8,6 @@
 #card-cvv {
     width: 60px;
 }
+div.card {
+    max-width: 380px;
+}
