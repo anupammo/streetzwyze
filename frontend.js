@@ -1,4 +1,6 @@
 // Front end script by anupammondal.in
-function newcardLink() {
-    
-}
+    $(document).ready(function () {
+        $("#new_card_dtls").click(function () {
+            $(".collapse").collapse('toggle');
+        });
+    });
