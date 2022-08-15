@@ -15,8 +15,11 @@ a {
 }
 
 #card_pin {
-    width: 60px;
-    float: left;
+    /* width: 60px;
+    float: left; */
+    text-align: center;
+    letter-spacing: 20px;
+    font-size: 20px;
 }
 
 i#card-ico-1, i#card-ico-3 {
@@ -24,8 +27,11 @@ i#card-ico-1, i#card-ico-3 {
 }
 
 #card_otp {
-    width: 80px;
-    float: left;
+    /* width: 80px;
+    float: left; */
+    text-align: center;
+    letter-spacing: 20px;
+    font-size: 20px;
 }
 
 div.card {
