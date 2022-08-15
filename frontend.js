@@ -24,3 +24,15 @@ function cardanimeThree() {
     y.style.display = "none";
     z.style.display = "block";
 }
+function cardanimeFour() {
+    var x = document.getElementById("card-ico-4");
+    var y = document.getElementById("card-ico-5");
+    x.style.display = "none";
+    y.style.display = "block";
+}
+function cardanimeFive() {
+    var x = document.getElementById("card-ico-6");
+    var y = document.getElementById("card-ico-7");
+    x.style.display = "none";
+    y.style.display = "block";
+}
