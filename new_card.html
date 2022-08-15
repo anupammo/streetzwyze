@@ -64,20 +64,28 @@
                                         </div>
                                     </li>
                                     <li class="list-group-item border-bottom-0 my-4">
-                                        <div class="col-auto text-secondary h2 mb-0 px-2">
-                                            <i class="bi bi-credit-card-2-front-fill"></i>
+                                        <div class="col-auto h2 mb-0 px-2">
+                                            <i class="bi bi-credit-card-2-front-fill text-secondary" id="card-ico-1"
+                                                style="display: block;"></i>
+                                            <i class="bi bi-credit-card-2-front-fill text-primary" id="card-ico-2"
+                                                style="display: none;"></i>
+                                            <i class="bi bi-credit-card-fill text-primary" id="card-ico-3"
+                                                style="display: none;"></i>
                                         </div>
                                         <div class="col-auto px-0" id="scroll-wrapper">
                                             <div id="scroll-inputs">
                                                 <input class="form-control shadow-none border-0" type="text"
                                                     pattern="[0-9]{16}" title="Sixteen digit card numner" required
-                                                    placeholder="1234 1234 1234 1234" id="new_card_dtls">
+                                                    placeholder="1234 1234 1234 1234" id="new_card_dtls"
+                                                    onfocus="cardanimeOne(this.id);">
                                                 <input class="form-control shadow-none border-0" type="text"
                                                     pattern="[0-9]{4}" required title="Four digit exp date"
-                                                    placeholder="MM/YY" id="card-exp-dt">
+                                                    placeholder="MM/YY" id="card-exp-dt"
+                                                    onfocus="cardanimeTwo(this.id);">
                                                 <input class="form-control shadow-none border-0" type="text"
                                                     pattern="[0-9]{3}" required title="Three digit CVV"
-                                                    placeholder="CVV" id="card-cvv">
+                                                    placeholder="CVV" id="card-cvv"
+                                                    onfocus="cardanimeThree(this.id);">
                                             </div>
                                         </div>
                                     </li>
@@ -117,6 +125,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+
+    <script src="frontend.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
