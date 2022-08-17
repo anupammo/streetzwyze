@@ -85,16 +85,15 @@
                                         <div class="col-auto float-right px-0" id="scroll-wrapper">
                                             <div id="scroll-inputs">
                                                 <input class="form-control shadow-none border-0" type="text"
-                                                    pattern="[0-9]{16}" title="Sixteen digit card numner" required
+                                                    title="Sixteen digit card numner" required
                                                     placeholder="1234 1234 1234 1234" id="new_card_dtls" name="card-no"
                                                     onfocus="cardanimeOne(this.id);">
                                                 <input class="form-control shadow-none border-0 mx-2" type="text"
-                                                    pattern="[0-9]{4}" required title="Four digit exp date"
-                                                    placeholder="MM/YY" id="card-exp-dt" name="card-exp"
-                                                    onfocus="cardanimeTwo(this.id);">
-                                                <input class="form-control shadow-none border-0" type="text"
-                                                    pattern="[0-9]{3}" required title="Three digit CVV"
-                                                    placeholder="CVV" id="card-cvv" onfocus="cardanimeThree(this.id);">
+                                                    required title="Four digit exp date" placeholder="MM/YY"
+                                                    id="card-exp-dt" name="card-exp" onfocus="cardanimeTwo(this.id);">
+                                                <input class="form-control shadow-none border-0" type="text" required
+                                                    title="Three digit CVV" placeholder="CVV" id="card-cvv"
+                                                    onfocus="cardanimeThree(this.id);">
                                             </div>
                                         </div>
                                         <div class="d-grid bg-light rounded mt-4 px-3 py-4">
@@ -122,8 +121,8 @@
                                         </div> -->
                                         <div class="px-0">
                                             <input class="form-control shadow-none border-0" type="text"
-                                                pattern="[0-9]{4}" inputmode="numeric" title="Four digit card pin"
-                                                required placeholder="✱✱✱✱" id="card_pin">
+                                                inputmode="numeric" title="Four digit card pin" required
+                                                placeholder="✱✱✱✱" id="card_pin">
                                         </div>
                                         <div class="d-grid bg-light rounded mt-3 px-3 py-4">
                                             <button class="btn btn-danger btn-block shadow-none my-4"
@@ -150,8 +149,8 @@
                                         </div> -->
                                         <div class="px-0">
                                             <input class="form-control shadow-none border-0" type="text"
-                                                pattern="[0-9]{6}" inputmode="numeric" title="Six digit mobile OTP"
-                                                required placeholder="" id="card_otp">
+                                                inputmode="numeric" title="Six digit mobile OTP" required placeholder="✱✱✱✱✱✱"
+                                                id="card_otp">
                                         </div>
                                         <div class="d-grid bg-light rounded mt-3 px-3 py-4">
                                             <a class="btn btn-danger btn-block shadow-none my-4"
@@ -225,11 +224,11 @@
             });
             $('#card_pin').inputmask({
                 mask: '9999',
-                placeholder: ' '
+                placeholder: '✱'
             });
             $('#card_otp').inputmask({
                 mask: '999999',
-                placeholder: ' '
+                placeholder: '✱'
             });
 
 
