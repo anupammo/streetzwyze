@@ -37,6 +37,7 @@ $(document).ready(function () {
     });
     $('#card_otp').inputmask({
         mask: '9{1,6}',
+        jitMasking: true,
         placeholder: ' '
     });
 });
