@@ -187,13 +187,49 @@
         crossorigin="anonymous"></script>
 
     <script src="frontend.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
-        integrity="sha256-yE5LLp5HSQ/z+hJeCqkz9hdjNkk1jaiGG0tDCraumnA=" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
+        integrity="sha256-yE5LLp5HSQ/z+hJeCqkz9hdjNkk1jaiGG0tDCraumnA=" crossorigin="anonymous"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"
+        integrity="sha512-jTgBq4+dMYh73dquskmUFEgMY5mptcbqSw2rmhOZZSJjZbD2wMt0H5nhqWtleVkyBEjmzid5nyERPSNBafG4GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-        $('input[name="card-no"]').mask('0000 0000 0000 0000');
-        $('input[name="card-exp"]').mask('00/00');
+        // $('input[name="card-no"]').mask('0000 0000 0000 0000');
+        // $('input[name="card-exp"]').mask('00/00');
+        $(document).ready(function () {
+            $('#new_card_dtls').inputmask({
+                mask: '9999 9999 9999 9999',
+                placeholder: '1234 1234 1234 1234',
+                "oncomplete": function () {
+                    $("#card-exp-dt").focus();
+                }
+            });
+            $('#card-exp-dt').inputmask({
+                mask: '99/99',
+                placeholder: 'MM/YY',
+                "oncomplete": function () {
+                    $("#card-cvv").focus();
+                }
+            });
+            $('#card-cvv').inputmask({
+                mask: '999',
+                placeholder: '123',
+                "oncomplete": function () {
+                    $("#pills-profile-tab").focus();
+                }
+            });
+
+
+            // $("#new_card_dtls").inputmask("9999 9999 9999 9999", { "oncomplete": function () { alert('inputmask complete'); } });
+        });
     </script>
+
+
+
+
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
