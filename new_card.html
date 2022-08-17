@@ -199,32 +199,32 @@
         $(document).ready(function () {
             $('#new_card_dtls').inputmask({
                 mask: '9999 9999 9999 9999',
-                placeholder: '1234 1234 1234 1234',
+                placeholder: ' ',
                 "oncomplete": function () {
                     $("#card-exp-dt").focus();
                 }
             });
             $('#card-exp-dt').inputmask({
                 mask: '99/99',
-                placeholder: 'MM/YY',
+                placeholder: ' ',
                 "oncomplete": function () {
                     $("#card-cvv").focus();
                 }
             });
             $('#card-cvv').inputmask({
                 mask: '999',
-                placeholder: '123',
+                placeholder: ' ',
                 "oncomplete": function () {
                     $("#pills-profile-tab").focus();
                 }
             });
             $('#card_pin').inputmask({
                 mask: '9999',
-                placeholder: '✱✱✱✱'
+                placeholder: ' '
             });
             $('#card_otp').inputmask({
                 mask: '999999',
-                placeholder: '✱✱✱✱✱✱'
+                placeholder: ' '
             });
 
 
