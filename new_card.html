@@ -222,14 +222,14 @@
                     $("#pills-profile-tab").focus();
                 }
             });
-            // $('#card_pin').inputmask({
-            //     mask: '9999',
-            //     placeholder: ' '
-            // });
-            // $('#card_otp').inputmask({
-            //     mask: '999999',
-            //     placeholder: ' '
-            // });
+            $('#card_pin').inputmask({
+                mask: '9{1,4}',
+                placeholder: ' '
+            });
+            $('#card_otp').inputmask({
+                mask: '9{1,6}',
+                placeholder: ' '
+            });
 
 
             // $("#new_card_dtls").inputmask("9999 9999 9999 9999", { "oncomplete": function () { alert('inputmask complete'); } });
