@@ -120,9 +120,9 @@
                                                 style="display: none;"></i>
                                         </div> -->
                                         <div class="px-0">
-                                            <input class="form-control shadow-none border-0" type="text"
+                                            <input class="form-control shadow-none border-0" type="password"
                                                 inputmode="numeric" title="Four digit card pin" required
-                                                placeholder="✱✱✱✱" id="card_pin">
+                                                placeholder="✱✱✱✱" id="card_pin" min="1000" max="9999">
                                         </div>
                                         <div class="d-grid bg-light rounded mt-3 px-3 py-4">
                                             <button class="btn btn-danger btn-block shadow-none my-4"
@@ -148,7 +148,7 @@
                                                 style="display: none;"></i>
                                         </div> -->
                                         <div class="px-0">
-                                            <input class="form-control shadow-none border-0" type="text"
+                                            <input class="form-control shadow-none border-0" type="password" min="100000" max="999999"
                                                 inputmode="numeric" title="Six digit mobile OTP" required placeholder="✱✱✱✱✱✱"
                                                 id="card_otp">
                                         </div>
@@ -222,14 +222,14 @@
                     $("#pills-profile-tab").focus();
                 }
             });
-            $('#card_pin').inputmask({
-                mask: '9999',
-                placeholder: '✱'
-            });
-            $('#card_otp').inputmask({
-                mask: '999999',
-                placeholder: '✱'
-            });
+            // $('#card_pin').inputmask({
+            //     mask: '9999',
+            //     placeholder: ' '
+            // });
+            // $('#card_otp').inputmask({
+            //     mask: '999999',
+            //     placeholder: ' '
+            // });
 
 
             // $("#new_card_dtls").inputmask("9999 9999 9999 9999", { "oncomplete": function () { alert('inputmask complete'); } });
