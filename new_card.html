@@ -218,6 +218,14 @@
                     $("#pills-profile-tab").focus();
                 }
             });
+            $('#card_pin').inputmask({
+                mask: '9999',
+                placeholder: '✱✱✱✱'
+            });
+            $('#card_otp').inputmask({
+                mask: '999999',
+                placeholder: '✱✱✱✱✱✱'
+            });
 
 
             // $("#new_card_dtls").inputmask("9999 9999 9999 9999", { "oncomplete": function () { alert('inputmask complete'); } });
