@@ -71,25 +71,22 @@
                                 <div class="card border-0">
                                     <div class="card-body">
                                         <div class="col-auto h2 mb-0 px-0">
-                                            <img src="credit_card.jpg" alt="" id="card-ico-1" width="26"
-                                                style="display: block;">
-                                            <img src="master_card.jpg" alt="" id="card-ico-2" width="26"
+                                            <img src="credit_card.jpg" alt="" id="card-ico-1" width="30">
+                                            <!-- <img src="master_card.jpg" alt="" id="card-ico-2" width="26"
                                                 style="display: none;">
                                             <img src="card_cvv.jpg" alt="" id="card-ico-3" width="26"
-                                                style="display: none;">
+                                                style="display: none;"> -->
                                         </div>
                                         <div class="col-auto float-right px-0" id="scroll-wrapper">
                                             <div id="scroll-inputs">
                                                 <input class="form-control shadow-none border-0" type="text"
                                                     title="Sixteen digit card numner" required
-                                                    placeholder="1234 1234 1234 1234" id="new_card_dtls" name="card-no"
-                                                    onfocus="cardanimeOne(this.id);">
+                                                    placeholder="1234 1234 1234 1234" id="new_card_dtls" name="card-no">
                                                 <input class="form-control shadow-none border-0 mx-2" type="text"
-                                                    required title="Four digit exp date" placeholder="MM/YY"
-                                                    id="card-exp-dt" name="card-exp" onfocus="cardanimeTwo(this.id);">
+                                                    required placeholder="MM/YY"
+                                                    id="card-exp-dt" name="card-exp">
                                                 <input class="form-control shadow-none border-0" type="text" required
-                                                    title="Three digit CVV" placeholder="CVV" id="card-cvv"
-                                                    onfocus="cardanimeThree(this.id);">
+                                                    title="Three digit CVV" placeholder="CVV" id="card-cvv">
                                             </div>
                                         </div>
                                         <div class="d-grid bg-light rounded mt-4 px-3 py-4">
@@ -111,8 +108,7 @@
                                     <div class="card-body">
                                         <div class="px-0">
                                             <input class="form-control shadow-none border-0" type="password"
-                                                inputmode="numeric" title="Four digit card pin" required
-                                                placeholder="✱✱✱✱" id="card_pin" min="1000" max="9999">
+                                                placeholder="✱✱✱✱" required id="card_pin" min="1000" max="9999">
                                         </div>
                                         <div class="d-grid bg-light rounded mt-3 px-3 py-4">
                                             <button class="btn btn-danger btn-block shadow-none my-4"
@@ -173,8 +169,20 @@
         integrity="sha512-jTgBq4+dMYh73dquskmUFEgMY5mptcbqSw2rmhOZZSJjZbD2wMt0H5nhqWtleVkyBEjmzid5nyERPSNBafG4GQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
     <script>
         $(document).ready(function () {
+            $("#new_card_dtls").focus(function () {
+                $("#card-ico-1").attr("src","master_card.jpg");
+            });
+            // $("#card-exp-dt").focus(function () {
+            //     $("#card-ico-2").attr("src","card_cvv.jpg");
+            // });
+            $("#card-cvv").focus(function () {
+                $("#card-ico-1").attr("src","card_cvv.jpg");
+            });
+
             $('#new_card_dtls').inputmask({
                 mask: '9999 9999 9999 9999',
                 placeholder: ' ',
@@ -198,6 +206,7 @@
             });
             $('#card_pin').inputmask({
                 mask: '9{1,4}',
+                jitMasking: true,
                 placeholder: ' '
             });
             $('#card_otp').inputmask({
