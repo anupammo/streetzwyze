@@ -2,6 +2,7 @@
 a {
     text-decoration: none !important;
 }
+
 #new_card_dtls {
     width: 180px;
 }
@@ -22,7 +23,8 @@ a {
     font-size: 20px;
 }
 
-i#card-ico-1, i#card-ico-3 {
+i#card-ico-1,
+i#card-ico-3 {
     font-size: 26px;
 }
 
@@ -40,12 +42,19 @@ div.card {
 
 #scroll-wrapper {
     overflow: hidden;
-    max-width: 250px;
-    height: 30px;
+    /* min-width: 180px; */
+    min-width: 86%;
+    height: 28px;
+    /* padding-top: 2px; */
 }
 
 #scroll-inputs {
     width: 360px;
+    /* min-width: 180px; */
+    /* max-width: 360px; */
+    /* float: left; */
+    position: absolute;
+    height: 40px;
 }
 
 .col-auto {
