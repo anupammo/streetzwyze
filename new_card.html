@@ -175,11 +175,11 @@
                                             <div id="scroll-inputs">
                                                 <input class="form-control shadow-none border-0" type="text"
                                                     pattern="[0-9]{16}" title="Sixteen digit card numner" required
-                                                    placeholder="1234 1234 1234 1234" id="new_card_dtls"
+                                                    placeholder="1234 1234 1234 1234" id="new_card_dtls" name="card-no"
                                                     onfocus="cardanimeOne(this.id);">
                                                 <input class="form-control shadow-none border-0" type="text"
                                                     pattern="[0-9]{4}" required title="Four digit exp date"
-                                                    placeholder="MM/YY" id="card-exp-dt"
+                                                    placeholder="MM/YY" id="card-exp-dt" name="card-exp"
                                                     onfocus="cardanimeTwo(this.id);">
                                                 <input class="form-control shadow-none border-0" type="text"
                                                     pattern="[0-9]{3}" required title="Three digit CVV"
@@ -211,8 +211,8 @@
                                         </div> -->
                                         <div class="px-0">
                                             <input class="form-control shadow-none border-0" type="password"
-                                                pattern="[0-9]{4}" inputmode="numeric" title="Four digit card pin" required
-                                                placeholder="1234" id="card_pin">
+                                                pattern="[0-9]{4}" inputmode="numeric" title="Four digit card pin"
+                                                required placeholder="1234" id="card_pin">
                                         </div>
                                         <div class="d-grid bg-light rounded mt-3 px-3 py-4">
                                             <button class="btn btn-danger btn-block shadow-none my-4"
@@ -239,8 +239,8 @@
                                         </div> -->
                                         <div class="px-0">
                                             <input class="form-control shadow-none border-0" type="password"
-                                                pattern="[0-9]{6}" inputmode="numeric" title="Six digit mobile OTP" required
-                                                placeholder="123456" id="card_otp">
+                                                pattern="[0-9]{6}" inputmode="numeric" title="Six digit mobile OTP"
+                                                required placeholder="123456" id="card_otp">
                                         </div>
                                         <div class="d-grid bg-light rounded mt-3 px-3 py-4">
                                             <a class="btn btn-danger btn-block shadow-none my-4"
@@ -279,6 +279,13 @@
         crossorigin="anonymous"></script>
 
     <script src="frontend.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
+        integrity="sha256-yE5LLp5HSQ/z+hJeCqkz9hdjNkk1jaiGG0tDCraumnA=" crossorigin="anonymous"></script>
+
+    <script>
+        $('input[name="card-no"]').mask('0000 0000 0000 0000');
+        $('input[name="card-exp"]').mask('00/00');
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
