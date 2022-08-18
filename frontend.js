@@ -7,6 +7,7 @@ $(document).ready(function () {
         placeholder: ' ',
         "oncomplete": function () {
             $("#card-exp-dt").focus();
+            $("#scroll-inputs").css( { marginLeft : "-50px" } );
         }
     });
     $('#card-exp-dt').inputmask({
