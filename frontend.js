@@ -33,10 +33,4 @@ $(document).ready(function () {
     $("#card-cvv").focus(function () {
         $("#card-ico-1").attr("src", "card_cvv.jpg");
     });
-    // 
-    var ysp = new YouShallPass("●", 800);
-    ysp.fixIE9();
-    document.querySelector("#card_pin").addEventListener('input', ysp.keyboardInputHandle.bind(ysp));
-    document.querySelector("#card_otp").addEventListener('input', ysp.keyboardInputHandle.bind(ysp));
-
 });
