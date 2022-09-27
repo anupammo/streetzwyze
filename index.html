@@ -19,8 +19,8 @@
     <title>Streetzwyze</title>
 </head>
 
-<body>
-    <header class="bg-warning">
+<body onload="typeWriter()">
+    <!-- <header class="bg-warning">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -28,81 +28,36 @@
                 </div>
             </div>
         </div>
-    </header>
-    <section class="bg-light">
+    </header> -->
+    <section class="py-5" id="section-bg">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-2 col-12"></div>
-                <div class="col-lg-6 col-md-8 col-12">
-                    <div class="card mx-auto d-block border-0 my-5" id="card-width">
-                        <div class="card-body p-3">
-                            <ul class="list-group list-group-flush rounded">
-                                <li class="list-group-item bg-light rounded py-4">
-                                    <div class="d-flex">
-                                        <div class="">
-                                            <svg class="bd-placeholder-img rounded" width="100" height="100"
-                                                xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200"
-                                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                                <title>A generic square placeholder image with a white border around it,
-                                                    making it resemble a photograph taken with an old instant camera
-                                                </title>
-                                                <rect width="100%" height="100%" fill="#868e96"></rect><text x="20%"
-                                                    y="53%" fill="#dee2e6" dy=".3em">100x100</text>
-                                            </svg>
-                                        </div>
-                                        <div class="flex-fill ml-3">
-                                            <p class="text-right my-3">Monster Studios</p>
-                                            <p class="text-right my-3">
-                                                <span>₦</span>
-                                                <!-- <span>NGN</span> -->
-                                                <span>30,000</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item bg-light">
-                                    <div class="d-flex my-4">
-                                        <div class="flex-fill">
-                                            <button type="button"
-                                                class="btn btn-danger shadow-none disabled">Select</button>
-                                        </div>
-                                        <div class="flex-fill">
-                                            <p class="text-right my-2">
-                                                <span>
-                                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAgCAMAAABq4atUAAAAhFBMVEX3nhvrABv/////XwD+7/D958XsDyj5tlT82qn/+fDwP1P+8+L+awXyIxD7zozwFxT5r7f1f4zyX2/uL0X9bwb+7dT3pCn93+L3mRn6hhD+WQH81Jr5vGHtHzb4r0X94Lf7z9T1Lw35QQj8egv0b376v8X2kJv2X0P6wnD5ihL4bE74nyWXYNIuAAABPklEQVQ4jZ2V61KDMBCFFwIkBEWgAloubZXWqu//fnInJSd2yvnFZPLNHnaTE7IXRYncWVYlm2heSouSE2WcF4GykaaPPLEWebHTrR1aYFYt1pATW7fyLnagIp24ewPlO0vT1y9pEgp09HTmmT296dR1hhzIMEiFI+QAby+s06sO0WGA1j3otO8h9q5Dmd9BOTB3GhiTQbITnZkK4VJBCxm6MJYCf1XYFIFCHzPEgD9uE3K3MMgf+SRN/R70CSCXjENixlG5BNzdg8ItULHN3qZGNMDffoFwyx8fbrnxGD1+YP0WQvf29E+h8N4l/IaF+owwjgr2OxVDsFS4F+jeiiXCIGUMozEsUSD96GGZqWHZKl710ItALKfrB8BJFKy69A+AWypIPSW5ArU6N1J6npTxeV4KxJXXVPNS+MrGP15ME2pz0EKIAAAAAElFTkSuQmCC"
-                                                        alt="" class="mx-1" width="42">
-                                                </span>
-                                                <strong class="pr-1">●●●●</strong>
-                                                <strong>2021</strong>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item bg-light">
-                                    <div class="d-flex my-4">
-                                        <div class="flex-fill">
-                                            <a class="btn btn-danger shadow-none" href="#">Select</a>
-                                        </div>
-                                        <div class="flex-fill">
-                                            <p class="text-right text-success my-2">
-                                                <strong>New Card</strong>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item bg-light">
-                                    <a class="btn btn-danger btn-block shadow-none my-4" href="new_card.html">PAY NOW</a>
-                                </li>
-                            </ul>
-                        </div>
+            <div class="row my-5 py-5">
+                <div class="col-lg-6 col-12 my-5">
+                    <h1 class="text-white font-weight-bolder display-3">
+                        Mobile App <br />
+                        for <span id="typetext"></span>
+                    </h1>
+                    <p class="text-white h5 my-5 py-4">Leno is one of the easiest and feature packed marketing
+                        automation
+                        apps in the market. Download it today!</p>
+                    <div>
+                        <a class="btn btn-light rounded-pill mr-2 px-4" href="#">Coming soon to Apple Store</a>
+                        <a class="btn btn-light rounded-pill mr-2 px-4" href="#">Coming soon to Play Store</a>
                     </div>
+                    <!-- <div class="my-5">
+                        <a class="btn btn-light rounded-pill mr-2 px-4" href="#">Coming soon to <i
+                                class="bi bi-apple"></i></a>
+                        <a class="btn btn-light rounded-pill mr-2 px-4" href="#">Coming soon to <i
+                                class="bi bi-google-play"></i></a>
+                    </div> -->
                 </div>
-                <div class="col-lg-3 col-md-2 col-12"></div>
+                <div class="col-lg-6 col-12">
+                    <img src="header-iphone.png" class="img-fluid" alt="">
+                </div>
             </div>
         </div>
     </section>
-    <footer class="bg-dark text-white">
+    <!-- <footer class="bg-dark text-white">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -110,7 +65,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -121,6 +76,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+
+    <script>
+        var i = 0;
+        var txt = 'Marketers';
+        var speed = 300;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("typetext").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+                // setInterval(txt, 5000);
+            }
+        }
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>

@@ -1,4 +1,12 @@
 /* Front end style by anupammondal.in */
+/* Landing Page */
+body {
+    background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url(section-background.jpg) center center no-repeat;
+    /* background-image: url(section-background.jpg); */
+    background-size: cover;
+}
+
+/* Landing Page */
 a {
     text-decoration: none !important;
 }
@@ -15,7 +23,8 @@ a {
     width: 60px;
 }
 
-#card_pin, #card_otp {
+#card_pin,
+#card_otp {
     text-align: center;
     letter-spacing: 10px;
     /* font-size: 20px; */
