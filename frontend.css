@@ -4,6 +4,9 @@
     background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url(section-background.jpg) center center no-repeat;
     background-size: cover;
 } */
+span#typetext {
+    font-style: italic;
+}
 
 /* Landing Page */
 a {
